@@ -1,0 +1,45 @@
+use_bpm 40
+use_synth :piano
+
+define :catchylefthand1 do
+  play :E2
+  sleep 0.25
+  play :E2
+  sleep 0.25
+  play :B1
+  sleep 0.25
+  play :B1
+  sleep 0.25
+  play :E2
+  sleep 0.125
+  play :E2
+  sleep 0.25
+  play :Fs2
+  sleep 0.25
+  play :E2
+  sleep 0.125
+  play :Fs2
+  sleep 0.25
+  play :G2
+  sleep 0.25
+  play :G2
+  sleep 0.25
+  play :A2
+  sleep 0.125
+  play :G2
+  sleep 0.25
+  play :Fs2
+end
+define :catchyrighthand1 do
+  play :B4
+  sleep 0.75
+  play :A4
+  sleep 0.25
+  play :G4
+  sleep 0.125
+  play :A4
+  sleep 0.25
+  play :B4
+end
+catchyrighthand1
+catchylefthand1
