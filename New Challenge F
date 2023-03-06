@@ -1,0 +1,9 @@
+num = 1
+
+10.times do
+  puts(num)
+  sleep 0.5
+  num = num + 1
+end
+
+puts("HAPPY NEW YEAR!")
