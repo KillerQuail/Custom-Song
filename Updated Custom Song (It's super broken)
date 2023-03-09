@@ -1,0 +1,71 @@
+cuphead = "C:/Users/joaquin_oliva/Documents/Audacity/Cuphead - All Bets Are Off.wav"
+
+use_bpm 40
+use_synth :piano
+
+define :catchylefthand1 do
+  play :E2
+  sleep 0.25
+  play :E2
+  sleep 0.25
+  play :B1
+  sleep 0.25
+  play :B1
+  sleep 0.25
+  play :E2
+  sleep 0.125
+  play :E2
+  sleep 0.25
+  play :Fs2
+  sleep 0.25
+  play :E2
+  sleep 0.125
+  play :Fs2
+  sleep 0.25
+  play :G2
+  sleep 0.25
+  play :G2
+  sleep 0.25
+  play :A2
+  sleep 0.125
+  play :G2
+  sleep 0.25
+  play :Fs2
+  sleep 1
+end
+define :catchyrighthand1 do
+  play :B4
+  sleep 0.75
+  play :A4
+  sleep 0.25
+  play :G4
+  sleep 0.125
+  play :A4
+  sleep 0.25
+  play :B4
+  sleep 0.375
+  play :E4
+  sleep 0.25
+  play :G4
+  sleep 0.125
+  play :B4
+  sleep 0.25
+  play :B4
+  sleep 0.25
+  play :A4
+  sleep 0.125
+  play :G4
+  sleep 0.25
+  play :Fs4
+  sleep 1
+end
+catchylefthand1
+
+live_loop :together do
+  catchylefthand1
+end
+
+live_loop :together1 do
+  catchyrighthand1
+end
+sample cuphead
