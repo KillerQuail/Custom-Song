@@ -1,0 +1,59 @@
+;vocals = "C:/Users/joaquin_oliva/Desktop/Viva La Vida Whack.wav"
+
+use_synth :piano
+use_bpm 138
+
+
+define :measure1and3 do |q|
+  play q, amp: 3
+  play :Eb4
+  sleep 1
+  play q, amp: 3
+  play :Eb4
+  sleep 1
+  play q, amp: 3
+  play :Eb4
+  sleep 1
+  play q, amp: 3
+  play :Eb4
+  sleep 0.5
+  play q
+  play :Eb4, amp: 3
+  sleep 0.5
+end
+
+
+define :measure2and4 do |s|
+  sleep 0.5
+  play s
+  play :Eb4, amp: 3
+  sleep 1
+  play s
+  play :Eb4, amp: 3
+  sleep 0.5
+  play s
+  play :Eb4, amp: 3
+  sleep 1
+  play s
+  play :Eb4, amp: 3
+  sleep 1
+end
+
+sleep 10
+2.times do
+  measure1and3 :Db4
+  measure2and4:Db4
+  measure1and3 :C4
+  measure2and4 :C4
+end
+live_loop :NoRELATION do
+  measure1and3 :Db4
+  measure2and4 :Db4
+  measure1and3 :C4
+  measure2and4 :C4
+end
+live_loop :Drums do
+  sample :drum_bass_hard, amp: 1.75
+  sleep 1
+end
+sample vocals, amp: 3
